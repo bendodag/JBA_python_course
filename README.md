@@ -10,6 +10,7 @@
 - TO DO:
   - implement computation of differentiated paynments
   - modify program so that it takes loan properties as a command line argument
+  - put on GitHub
 
 ### Markdown text editor
 - work in progress, to be uploaded
