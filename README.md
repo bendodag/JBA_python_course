@@ -5,4 +5,4 @@
 
 ## Unfinished projects:
 - loan calculator
-- markdown text
+- markdown text editor
