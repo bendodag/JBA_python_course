@@ -1,8 +1,15 @@
 # Codes from the Intro to Python course (JetBrains Academy)
 
 ## Finished projects:
-- honest calculator
+### Honest calculator
+- simple arithmetic calculator with memory option
 
 ## Unfinished projects:
-- loan calculator
-- markdown text editor
+### Loan calculator
+- work in progress (stage 3/4 completed)
+- TO DO:
+  - implement computation of differentiated paynments
+  - modify program so that it takes loan properties as a command line argument
+
+### Markdown text editor
+- work in progress, to be uploaded
