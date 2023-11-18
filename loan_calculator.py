@@ -1,17 +1,23 @@
-# monthly_payment = math.ceil(loan_principal / months)
-# last_payment = loan_principal - (months - 1) * monthly_payment
 import math
+import argparse
 
-print("What do you want to calculate?")
-print("type 'n' for number of monthly payments,")
-print("type 'a' for annuity monthly payment amount,")
-print("type 'p' for loan principal:")
-question = input()
+parser = argparse.ArgumentParser(description="This program calculates your loan properties based on you input.")
+parser.add_argument("-pa", "--payment")
+parser.add_argument("-pr", "--principal")
+parser.add_argument("-per", "--periods")
+parser.add_argument("-in", "--interest")
 
-if question == "n":
-    loan_principal = float(input("Enter the loan principal:"))
-    monthly_payment = float(input("Enter the monthly payment:"))
-    interest = float(input("Enter the loan interest:"))
+args = parser.parse_args()
+loan_principal = args.principal
+monthly_payment = args.payment
+interest = args.interest
+n_months = args.periods
+
+
+if n_months is None:
+    loan_principal = float(loan_principal)
+    monthly_payment = float(monthly_payment)
+    interest = float(interest)
 
     nom_interest = interest / (12 * 100)
     months = math.ceil(
@@ -27,10 +33,10 @@ if question == "n":
     else:
         print(f'It will take {math.floor(months / 12)} years and {months % 12} months to repay the loan')
 
-elif question == "a":
-    loan_principal = float(input("Enter the loan principal:"))
-    months = float(input("Enter the number of periods:"))
-    interest = float(input("Enter the loan interest:"))
+elif monthly_payment is None:
+    loan_principal = float(loan_principal)
+    months = float(n_months)
+    interest = float(interest)
 
     nom_interest = interest / (12 * 100)
     monthly_payment = loan_principal * nom_interest * pow((1 + nom_interest), months) / (
@@ -38,17 +44,18 @@ elif question == "a":
 
     print(f'Your monthly payment = {math.ceil(monthly_payment)}!')
 
-elif question == "p":
-    monthly_payment = float(input("Enter the annuity payment:"))
-    months = float(input("Enter the number of periods:"))
-    interest = float(input("Enter the loan interest:"))
+elif loan_principal is None:
+    monthly_payment = float(monthly_payment)
+    months = float(n_months)
+    interest = float(interest)
 
     nom_interest = interest / (12 * 100)
     loan_principal = monthly_payment * (pow(1 + nom_interest, months) - 1) / (
                 nom_interest * pow((1 + nom_interest), months))
 
-    print(f'Your loan principal = {loan_principal}!')
+    print(f'Your loan principal = {round(loan_principal)}!')
 
 else:
+    print("Unexpected behavior. Option is not implemented.")
     pass
 
