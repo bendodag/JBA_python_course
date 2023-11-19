@@ -4,11 +4,10 @@
 ### Honest calculator
 - simple arithmetic calculator with memory option
 
-## Unfinished projects:
 ### Loan calculator
-- work in progress (stage 3/4 completed)
-- TO DO:
-  - implement computation of differentiated payments and overpayment
+- simple calculator for personal loan properties
+
+## Unfinished projects:
 
 ### Markdown text editor
 - work in progress, to be uploaded
