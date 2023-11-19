@@ -9,5 +9,8 @@
 
 ## Unfinished projects:
 
+### Tic-Tac-Toe game
+- work in progress (stage 3/5)
+
 ### Markdown text editor
 - work in progress, to be uploaded
