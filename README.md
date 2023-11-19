@@ -8,9 +8,7 @@
 ### Loan calculator
 - work in progress (stage 3/4 completed)
 - TO DO:
-  - implement computation of differentiated paynments
-  - modify program so that it takes loan properties as a command line argument
-  - put on GitHub
+  - implement computation of differentiated payments and overpayment
 
 ### Markdown text editor
 - work in progress, to be uploaded
