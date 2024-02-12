@@ -7,10 +7,10 @@
 ### Loan calculator
 - simple calculator for personal loan properties
 
-## Unfinished projects:
-
 ### Tic-Tac-Toe game
-- work in progress (stage 3/5)
+- simple command-line based tic-tac-toe game
 
-### Markdown text editor
-- work in progress, to be uploaded
+### Bill splitter
+- simple program to split bill among friends with a funny random feature
+
+## Unfinished projects:
