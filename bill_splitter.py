@@ -1,6 +1,7 @@
 # write your code here
 import random
 
+
 def lucky_feature(list_of_guests, guests_dict, n_of_guests, bill):
         rand_name = list_of_guests[random.randint(0, n_of_guests - 1)]
         print(f"{rand_name} is the lucky one!")
